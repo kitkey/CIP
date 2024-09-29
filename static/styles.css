@@ -76,14 +76,26 @@ h1 {
     font-size: 24px;
 }
 
-input[type="text"] {
+.file-upload-btn {
+    background: linear-gradient(90deg, #0079C2, #0091E6, #00AEEF, #0091E6, #0079C2);
+    background-size: 200% 200%;
+    color: white;
+    border: none;
+    cursor: pointer;
     width: 95%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #0079C2;
     border-radius: 5px;
     font-size: 16px;
+    animation: gradientButton 5s ease infinite;
+    text-align: center;
+    display: inline-block;
 }
+
+.file-upload-btn:hover {
+    background-position: 100% 50%;
+}
+
 
 input[type="submit"] {
     background: linear-gradient(90deg, #0079C2, #0091E6, #00AEEF, #0091E6, #0079C2);
